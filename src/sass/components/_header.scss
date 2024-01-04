@@ -1,0 +1,151 @@
+.header {
+    padding-top: 24px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+
+@media screen and (min-width: 1110px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+.logo {
+    @media screen and (min-width: 1110px) {
+    margin-right: 60px;
+    }
+    
+}
+
+.site-nav__list {
+    @media screen and (max-width: 1109px) {
+        display: none;
+    }
+    @media screen and (min-width: 1110px) {
+        display: flex;
+    }
+    
+    // margin-right: 260px;
+
+}
+
+.site-nav__item:not(:last-child) {
+    margin-right: 25px;
+}
+
+.site-nav__link {
+    color: #FCF9F9;
+    cursor: pointer;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+}
+
+.site-nav__link:hover {
+    color: #ECD979;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.tel {
+    font-family: Manrope;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 14px 28px;
+    border: 1px solid #FCF9F91A;
+    background-color: transparent;
+    border-radius: 15px;
+    color: #FCF9F9;
+    cursor: pointer;
+    margin-right: 20px;
+    @media screen and (max-width: 1109px) {
+            display: none;
+        }
+}
+
+.tel:hover {
+    background-color: transparent;
+    border: 1px solid #ECD979;
+}
+
+.social-links__list {
+    display: flex;
+}
+
+.social-links__item {
+    width: 44px;
+    height: 44px;
+
+}
+
+.social-links__item:not(:last-child) {
+    margin-right: 12px;
+}
+
+.social-links__link {
+    border: 1px solid #FCF9F91A;
+    border-radius: 15px;
+    background-color: #FCF9F91A;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links__link:hover {
+    background-color: transparent;
+    border: 1px solid #ECD979;
+
+}
+
+.button-menu{
+    border: 0;
+    background-color: transparent;
+    @media screen and (min-width: 1109px) {
+            display: none;
+        }
+}
+
+.menu-container{
+    @media screen and (min-width: 1110px) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.button-menu .icon-close {
+    display: none;
+}
+
+.button-menu.is-open .icon-close {
+    display: block;
+}
+
+.button-menu.is-open .icon-menu {
+    display: none;
+}
+
+.menu-container.is-open {
+    display: flex;
+}
+
+.button-menu.is-open {
+    z-index: 5;
+}
